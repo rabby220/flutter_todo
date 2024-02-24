@@ -8,7 +8,7 @@ class FavoriteView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FavoriteView'),
+        title: const Text('Favorite Todo'),
         centerTitle: true,
       ),
       body: Obx(

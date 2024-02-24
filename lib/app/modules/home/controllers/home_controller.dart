@@ -11,12 +11,15 @@ class HomeController extends GetxController {
   final RxList<TodoModel> _todoList = <TodoModel>[].obs;
    RxList<TodoModel> get allTodoList => _todoList;
 
-
   final RxList<TodoModel> _favoriteTodoList = <TodoModel>[].obs;
   RxList<TodoModel> get favoriteAllTodoList => _favoriteTodoList;
 
   void addTodoList(TodoModel todoModel) {
     _todoList.add(todoModel);
+  }
+
+  void updateTodoList(TodoModel todoModel, int index) {
+    _todoList[index] = todoModel;
   }
 
   void deleteTodoList(TodoModel todoModel) {
